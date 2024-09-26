@@ -17,17 +17,15 @@ public:
 	};
 protected:
 	GLFWwindow * window;
-	GLModel * currentModel;
+	vector<GLModel> models;
 	int sceneCount;
 	int currentScene;
 	SubScenes subScene;
 	bool isInit;
+	GLuint mode;
 
 	GLController() {};
-	virtual ~GLController()
-	{
-		delete currentModel;
-	};
+	virtual ~GLController(){};
 	GLController(GLController const&) = delete;
 	GLController& operator= (GLController const&) = delete;
 

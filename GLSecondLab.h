@@ -19,6 +19,8 @@ private:
 
     void ConfigureScene(int scene) override;
 
+    float scale;
+
 public:
     void Init(GLFWwindow* window) override;
     static GLSecondLab& GetInstance()

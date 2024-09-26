@@ -8,9 +8,13 @@ void GLModel::render(GLuint mode)
 	glBindVertexArray(vaoID);
 	//Если индексы есть - рисуем по ним
 	if (indexCount > 0)
+	{
 		glDrawElements(mode, indexCount, GL_UNSIGNED_INT, 0);
+	}
 	else
+	{
 		glDrawArrays(mode, 0, vertexCount);
+	}
 }
 
 void GLModel::loadCoords(glm::vec3* verteces, size_t count)

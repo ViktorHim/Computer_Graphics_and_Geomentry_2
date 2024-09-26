@@ -36,10 +36,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="vs.glsl">
+    <None Include="grad_vs.glsl">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="fs.glsl">
+    <None Include="grad_fs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mono_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mono_fs.glsl">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

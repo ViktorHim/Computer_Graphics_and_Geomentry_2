@@ -136,9 +136,11 @@
     <ClInclude Include="GLUtils.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="fs.glsl" />
+    <None Include="grad_fs.glsl" />
+    <None Include="mono_fs.glsl" />
+    <None Include="mono_vs.glsl" />
     <None Include="packages.config" />
-    <None Include="vs.glsl" />
+    <None Include="grad_vs.glsl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="callbacks.cpp" />

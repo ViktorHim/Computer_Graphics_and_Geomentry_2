@@ -61,13 +61,15 @@ void GLController::Render()
 {
 	glViewport(0, 0, winWidth, winHeight);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	currentModel->render();
+	for(auto& model : models)
+	{
+		model.render(mode);
+	}
 }
 
 void GLController::Init(GLFWwindow* _window)
 {
 	window = _window;
-	currentModel = new GLModel(window);
 	currentScene = 0;
 	isInit = true;
 }
